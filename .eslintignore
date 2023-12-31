@@ -1,0 +1,7 @@
+# Dependency files
+node_modules/
+
+# Dist
+__generated__
+dist/
+out

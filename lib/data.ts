@@ -1,0 +1,155 @@
+import React from 'react';
+import { CgWorkAlt } from 'react-icons/cg';
+import { FaReact } from 'react-icons/fa';
+import { LuGraduationCap } from 'react-icons/lu';
+import bingVoiceSystemImg from '@/public/project-banners/bing-voice-system.png';
+import bubblePopImg from '@/public/project-banners/bubblepop.jpg';
+import hexanewsImg from '@/public/project-banners/hexanews.png';
+import liftSystemImg from '@/public/project-banners/lift-system.png';
+import sparkleImg from '@/public/project-banners/sparkle.png';
+import wsdBookstoreImg from '@/public/project-banners/wsd-bookstore.png';
+import userManagementImg from '@/public/project-banners/user-management.png';
+
+export const links = [
+  {
+    name: 'Home',
+    hash: '#home',
+  },
+  {
+    name: 'About',
+    hash: '#about',
+  },
+  {
+    name: 'Projects',
+    hash: '#projects',
+  },
+  {
+    name: 'Skills',
+    hash: '#skills',
+  },
+  {
+    name: 'Experience',
+    hash: '#experience',
+  },
+  {
+    name: 'Contact',
+    hash: '#contact',
+  },
+] as const;
+
+export const experiences = [
+  {
+    title: 'Bachelor of Science in IT, Bachelor of Business',
+    location: 'University of Technology Sydney',
+    description:
+      'I studied at UTS with focus on Enterprise Systems Development and Finance majors.',
+    icon: React.createElement(LuGraduationCap),
+    date: '2015 - 2018',
+  },
+  {
+    title: 'Administrative Assistant',
+    location: 'PRN Medical Billing',
+    description: 'I worked as medical biller.',
+    icon: React.createElement(CgWorkAlt),
+    date: '2015 - 2021',
+  },
+  {
+    title: 'Event Communications Intern',
+    location: 'Dementia Australia',
+    description:
+      'I volunteered as an intern of the fundraising team division. I assisted the maintenance of Dementia Australia website, specifically the Memory Walk & Jog charity event.',
+    icon: React.createElement(FaReact),
+    date: '2015',
+  },
+  {
+    title: 'Diploma of Business',
+    location: 'UTS Insearch',
+    description: 'I studied at UTS Insearch. Focusing on business major.',
+    icon: React.createElement(FaReact),
+    date: '2014',
+  },
+] as const;
+
+export const projects = [
+  {
+    title: 'Bubble Pop',
+    description: 'An interactive bubble popping game app for iOS.',
+    tags: ['iOS', 'Swift'],
+    imageUrl: bubblePopImg,
+    url: 'https://github.com/audwinoyong/bubblepop',
+  },
+  {
+    title: 'Hexanews',
+    description: 'Web application for content publishing.',
+    tags: [
+      'React',
+      'TypeScript',
+      'Redux',
+      'Node.js',
+      'Express',
+      'Joi',
+      'MongoDB',
+    ],
+    imageUrl: hexanewsImg,
+    url: 'https://github.com/dotaemon99/hexanews',
+  },
+  {
+    title: 'Sparkle',
+    description: 'Car wash locator and booking app for Android.',
+    tags: ['Android', 'Java', 'Firebase'],
+    imageUrl: sparkleImg,
+    url: 'https://github.com/audwinoyong/sparkle',
+  },
+  {
+    title: 'Bing Voice System',
+    description:
+      'Proof of Concept web application for voice-based conversations.',
+    tags: ['C#', 'ASP.NET MVC', 'MSSQL'],
+    imageUrl: bingVoiceSystemImg,
+    url: 'https://github.com/audwinoyong/BingVoiceSystem',
+  },
+  {
+    title: 'Lift System',
+    description: 'JavaFX application of Lift System.',
+    tags: ['Java', 'JavaFX', 'FXML'],
+    imageUrl: liftSystemImg,
+    url: 'https://github.com/audwinoyong/lift-system',
+  },
+  {
+    title: 'WSD Bookstore',
+    description: 'Web application for listing secondhand textbooks.',
+    tags: ['JSP', 'REST API'],
+    imageUrl: wsdBookstoreImg,
+    url: 'https://github.com/audwinoyong/wsd-bookstore',
+  },
+  {
+    title: 'User Management System',
+    description:
+      'Windows Forms application of reputation system. It has features such as assign user ratings, promote user roles.',
+    tags: ['Windows Forms'],
+    imageUrl: userManagementImg,
+    url: 'https://github.com/audwinoyong/UserManagement',
+  },
+] as const;
+
+export const skills = [
+  'React',
+  'Angular',
+  'Next.js',
+  'TypeScript',
+  'JavaScript',
+  'Redux',
+  'Cypress',
+  'Node.js',
+  'GraphQL',
+  'Apollo',
+  'Express',
+  'HTML',
+  'CSS',
+  'C# .NET Core',
+  'Git',
+  'Tailwind',
+  'MySQL',
+  'MongoDB',
+  'PostgreSQL',
+] as const;
