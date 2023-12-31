@@ -7,9 +7,32 @@ import userManagementImg from '@/public/project-banners/user-management.png';
 import wsdBookstoreImg from '@/public/project-banners/wsd-bookstore.png';
 import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
-import { FaAws } from 'react-icons/fa';
+import {
+  FaAws,
+  FaCss3Alt,
+  FaGitAlt,
+  FaHtml5,
+  FaNodeJs,
+  FaReact,
+} from 'react-icons/fa6';
+import { GrMysql } from 'react-icons/gr';
 import { LuGraduationCap } from 'react-icons/lu';
 import { MdOutlineVolunteerActivism } from 'react-icons/md';
+import {
+  SiAngular,
+  SiApollographql,
+  SiCypress,
+  SiDotnet,
+  SiExpress,
+  SiGraphql,
+  SiJavascript,
+  SiMongodb,
+  SiNextdotjs,
+  SiPostgresql,
+  SiRedux,
+  SiTailwindcss,
+  SiTypescript,
+} from 'react-icons/si';
 import { VscAzure } from 'react-icons/vsc';
 
 export const links = [
@@ -155,23 +178,80 @@ export const projects = [
 ] as const;
 
 export const skills = [
-  'React',
-  'Angular',
-  'Next.js',
-  'TypeScript',
-  'JavaScript',
-  'Redux',
-  'Cypress',
-  'Node.js',
-  'GraphQL',
-  'Apollo',
-  'Express',
-  'HTML',
-  'CSS',
-  'C# .NET Core',
-  'Git',
-  'Tailwind',
-  'MySQL',
-  'MongoDB',
-  'PostgreSQL',
+  {
+    icon: React.createElement(FaReact),
+    name: 'React',
+  },
+  {
+    icon: React.createElement(SiAngular),
+    name: 'Angular',
+  },
+  {
+    icon: React.createElement(SiNextdotjs),
+    name: 'Next.js',
+  },
+  {
+    icon: React.createElement(SiTypescript),
+    name: 'TypeScript',
+  },
+  {
+    icon: React.createElement(SiJavascript),
+    name: 'JavaScript',
+  },
+  {
+    icon: React.createElement(SiRedux),
+    name: 'Redux',
+  },
+  {
+    icon: React.createElement(SiCypress),
+    name: 'Cypress',
+  },
+  {
+    icon: React.createElement(FaNodeJs),
+    name: 'Node.js',
+  },
+  {
+    icon: React.createElement(SiGraphql),
+    name: 'GraphQL',
+  },
+  {
+    icon: React.createElement(SiApollographql),
+    name: 'Apollo',
+  },
+  {
+    icon: React.createElement(SiExpress),
+    name: 'Express',
+  },
+  {
+    icon: React.createElement(FaHtml5),
+    name: 'HTML',
+  },
+  {
+    icon: React.createElement(FaCss3Alt),
+    name: 'CSS',
+  },
+  {
+    icon: React.createElement(SiDotnet),
+    name: 'C# .NET Core',
+  },
+  {
+    icon: React.createElement(FaGitAlt),
+    name: 'Git',
+  },
+  {
+    icon: React.createElement(SiTailwindcss),
+    name: 'Tailwind',
+  },
+  {
+    icon: React.createElement(GrMysql),
+    name: 'MySQL',
+  },
+  {
+    icon: React.createElement(SiMongodb),
+    name: 'MongoDB',
+  },
+  {
+    icon: React.createElement(SiPostgresql),
+    name: 'PostgreSQL',
+  },
 ] as const;
