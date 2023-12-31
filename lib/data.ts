@@ -1,14 +1,14 @@
-import React from 'react';
-import { CgWorkAlt } from 'react-icons/cg';
-import { FaReact } from 'react-icons/fa';
-import { LuGraduationCap } from 'react-icons/lu';
 import bingVoiceSystemImg from '@/public/project-banners/bing-voice-system.png';
 import bubblePopImg from '@/public/project-banners/bubblepop.jpg';
 import hexanewsImg from '@/public/project-banners/hexanews.png';
 import liftSystemImg from '@/public/project-banners/lift-system.png';
 import sparkleImg from '@/public/project-banners/sparkle.png';
-import wsdBookstoreImg from '@/public/project-banners/wsd-bookstore.png';
 import userManagementImg from '@/public/project-banners/user-management.png';
+import wsdBookstoreImg from '@/public/project-banners/wsd-bookstore.png';
+import React from 'react';
+import { CgWorkAlt } from 'react-icons/cg';
+import { LuGraduationCap } from 'react-icons/lu';
+import { MdOutlineVolunteerActivism } from 'react-icons/md';
 
 export const links = [
   {
@@ -58,14 +58,14 @@ export const experiences = [
     location: 'Dementia Australia',
     description:
       'I volunteered as an intern of the fundraising team division. I assisted the maintenance of Dementia Australia website, specifically the Memory Walk & Jog charity event.',
-    icon: React.createElement(FaReact),
+    icon: React.createElement(MdOutlineVolunteerActivism),
     date: '2015',
   },
   {
     title: 'Diploma of Business',
     location: 'UTS Insearch',
     description: 'I studied at UTS Insearch. Focusing on business major.',
-    icon: React.createElement(FaReact),
+    icon: React.createElement(LuGraduationCap),
     date: '2014',
   },
 ] as const;
