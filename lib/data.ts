@@ -240,7 +240,7 @@ export const skills = [
   },
   {
     icon: React.createElement(SiTailwindcss),
-    name: 'Tailwind',
+    name: 'Tailwind CSS',
   },
   {
     icon: React.createElement(GrMysql),
