@@ -7,8 +7,10 @@ import userManagementImg from '@/public/project-banners/user-management.png';
 import wsdBookstoreImg from '@/public/project-banners/wsd-bookstore.png';
 import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
+import { FaAws } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
 import { MdOutlineVolunteerActivism } from 'react-icons/md';
+import { VscAzure } from 'react-icons/vsc';
 
 export const links = [
   {
@@ -38,6 +40,20 @@ export const links = [
 ] as const;
 
 export const experiences = [
+  {
+    title: 'Microsoft Azure Developer Associate',
+    location: 'Microsoft',
+    description: 'I gained Azure cloud certification as developer associate.',
+    icon: React.createElement(VscAzure),
+    date: 'Nov 2023',
+  },
+  {
+    title: 'AWS Certified Developer - Associate',
+    location: 'Amazon Web Services (AWS)',
+    description: 'I gained AWS cloud certification as a developer associate.',
+    icon: React.createElement(FaAws),
+    date: 'July 2022',
+  },
   {
     title: 'Bachelor of Science in IT, Bachelor of Business',
     location: 'University of Technology Sydney',
