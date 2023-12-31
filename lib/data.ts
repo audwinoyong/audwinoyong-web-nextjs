@@ -10,6 +10,7 @@ import { CgWorkAlt } from 'react-icons/cg';
 import {
   FaAws,
   FaCss3Alt,
+  FaDocker,
   FaGitAlt,
   FaHtml5,
   FaNodeJs,
@@ -231,6 +232,10 @@ export const skills = [
     name: 'CSS',
   },
   {
+    icon: React.createElement(SiTailwindcss),
+    name: 'Tailwind CSS',
+  },
+  {
     icon: React.createElement(SiDotnet),
     name: 'C# .NET Core',
   },
@@ -239,8 +244,8 @@ export const skills = [
     name: 'Git',
   },
   {
-    icon: React.createElement(SiTailwindcss),
-    name: 'Tailwind CSS',
+    icon: React.createElement(FaDocker),
+    name: 'Docker',
   },
   {
     icon: React.createElement(GrMysql),
