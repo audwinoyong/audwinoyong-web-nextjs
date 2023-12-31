@@ -46,6 +46,7 @@ export const experiences = [
     description: 'I gained Azure cloud certification as developer associate.',
     icon: React.createElement(VscAzure),
     date: 'Nov 2023',
+    url: 'https://learn.microsoft.com/en-us/users/audwinoyong/credentials/298f01abe1ab897f',
   },
   {
     title: 'AWS Certified Developer - Associate',
@@ -53,6 +54,7 @@ export const experiences = [
     description: 'I gained AWS cloud certification as a developer associate.',
     icon: React.createElement(FaAws),
     date: 'July 2022',
+    url: 'https://www.credly.com/badges/78e133ed-7f57-432b-bd4b-d00fa50e8077',
   },
   {
     title: 'Bachelor of Science in IT, Bachelor of Business',
@@ -61,6 +63,7 @@ export const experiences = [
       'I studied at UTS with focus on Enterprise Systems Development and Finance majors.',
     icon: React.createElement(LuGraduationCap),
     date: '2015 - 2018',
+    url: 'https://www.uts.edu.au',
   },
   {
     title: 'Administrative Assistant',
@@ -68,6 +71,7 @@ export const experiences = [
     description: 'I worked as medical biller.',
     icon: React.createElement(CgWorkAlt),
     date: '2015 - 2021',
+    url: 'https://www.prnmedbill.com.au',
   },
   {
     title: 'Event Communications Intern',
@@ -76,6 +80,7 @@ export const experiences = [
       'I volunteered as an intern of the fundraising team division. I assisted the maintenance of Dementia Australia website, specifically the Memory Walk & Jog charity event.',
     icon: React.createElement(MdOutlineVolunteerActivism),
     date: '2015',
+    url: 'https://www.memorywalk.com.au',
   },
   {
     title: 'Diploma of Business',
@@ -83,6 +88,7 @@ export const experiences = [
     description: 'I studied at UTS Insearch. Focusing on business major.',
     icon: React.createElement(LuGraduationCap),
     date: '2014',
+    url: 'https://www.insearch.edu.au',
   },
 ] as const;
 

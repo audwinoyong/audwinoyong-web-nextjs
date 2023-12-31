@@ -45,7 +45,13 @@ export default function Experience() {
               }}
             >
               <h3 className="font-semibold">{item.title}</h3>
-              <p className="font-normal !mt-0">📍{item.location}</p>
+              <a
+                href={item?.url}
+                target="_blank"
+                className="hover:text-gray-500"
+              >
+                <p className="font-normal !mt-0">📍{item.location}</p>
+              </a>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
