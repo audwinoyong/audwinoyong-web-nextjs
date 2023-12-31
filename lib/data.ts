@@ -45,7 +45,7 @@ export const experiences = [
     location: 'Microsoft',
     description: 'I gained Azure cloud certification as developer associate.',
     icon: React.createElement(VscAzure),
-    date: 'Nov 2023',
+    date: 'Oct 2023',
     url: 'https://learn.microsoft.com/en-us/users/audwinoyong/credentials/298f01abe1ab897f',
   },
   {
