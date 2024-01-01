@@ -5,6 +5,7 @@ import { useSectionInView } from '@/lib/hooks';
 import avatarImg from '@/public/avatar.jpg';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useState } from 'react';
 import { BsChatLeftText, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { FaGithub, FaStackOverflow, FaYoutube } from 'react-icons/fa';
 import SectionHeading from './section-heading';
@@ -12,6 +13,49 @@ import SectionHeading from './section-heading';
 export default function Intro() {
   const { ref } = useSectionInView('Home', 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const [isIconClicked, setIsIconClicked] = useState(false);
+
+  const initial = {
+    opacity: 0,
+    scale: 0,
+  };
+
+  const springIn = {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      type: 'spring',
+      stiffness: 120,
+      delay: 0.1,
+      duration: 0.7,
+    },
+  };
+
+  const rotate = {
+    opacity: 1,
+    scale: 1,
+    rotate: [0, 20, 0],
+    transition: {
+      duration: 1,
+      ease: 'easeInOut',
+      repeat: Infinity,
+      repeatDelay: 0,
+    },
+  };
+
+  const variants = {
+    initial,
+    springIn,
+    rotate,
+  };
+
+  const handleIconClick = () => {
+    setIsIconClicked(true);
+
+    setTimeout(() => {
+      setIsIconClicked(false);
+    }, 2000);
+  };
 
   return (
     <section
@@ -40,15 +84,11 @@ export default function Intro() {
           </motion.div>
 
           <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: 'spring',
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
+            className="absolute bottom-0 right-0 text-4xl cursor-pointer"
+            onClick={handleIconClick}
+            variants={variants}
+            initial={initial}
+            animate={!isIconClicked ? 'springIn' : 'rotate'}
           >
             👋🏻
           </motion.span>
