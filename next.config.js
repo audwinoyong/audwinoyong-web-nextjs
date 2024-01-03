@@ -14,3 +14,5 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
+// Node v21.5.0
