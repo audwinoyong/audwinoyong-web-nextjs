@@ -16,7 +16,7 @@ export default function Experience() {
   const { theme } = useTheme();
 
   return (
-    <section id="experience" ref={ref} className="mb-28 scroll-mt-28 sm:mb-40">
+    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>Experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiences.map((item, index) => (
@@ -43,7 +43,6 @@ export default function Experience() {
                   theme === 'light' ? 'white' : 'rgba(255, 255, 255, 0.15)',
                 fontSize: '1.5rem',
               }}
-              visible={true} // Next.js 14 type issue: https://github.com/vercel/next.js/issues/56041#issuecomment-1798141049
             >
               <h3 className="font-semibold">{item.title}</h3>
               <a
@@ -51,7 +50,7 @@ export default function Experience() {
                 target="_blank"
                 className="hover:text-gray-500"
               >
-                <p className="!mt-0 font-normal">📍{item.location}</p>
+                <p className="font-normal !mt-0">📍{item.location}</p>
               </a>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
