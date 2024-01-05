@@ -31,6 +31,7 @@ import {
   SiNextdotjs,
   SiPostgresql,
   SiRedux,
+  SiStorybook,
   SiTailwindcss,
   SiTypescript,
 } from 'react-icons/si';
@@ -202,6 +203,10 @@ export const skills = [
   {
     icon: React.createElement(SiRedux),
     name: 'Redux',
+  },
+  {
+    icon: React.createElement(SiStorybook),
+    name: 'Storybook',
   },
   {
     icon: React.createElement(SiCypress),
