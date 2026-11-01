@@ -33,7 +33,9 @@ export default function Contact() {
 
       <p className="-mt-6 dark:text-white/80">
         Please contact me through the list above.
-        {/*
+      </p>
+      {/*
+      <p className="-mt-6 dark:text-white/80">
         Please contact me directly at{' '}
         <a
           className="underline hover:text-gray-500 transition"
