@@ -32,6 +32,8 @@ export default function Contact() {
       <SectionHeading>Contact me</SectionHeading>
 
       <p className="-mt-6 dark:text-white/80">
+        Please contact me through the list above.
+        {/*
         Please contact me directly at{' '}
         <a
           className="underline hover:text-gray-500 transition"
@@ -72,6 +74,7 @@ export default function Contact() {
         />
         <SubmitBtn />
       </form>
+      */}
     </motion.section>
   );
 }
